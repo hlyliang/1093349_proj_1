@@ -1,7 +1,7 @@
 .globl	main
 .data 	
     	Input:	.string "Input the number:\n"
-             Output:	.string "The damage:\n"	
+        Output:	.string "The damage:\n"	
 .text
 main:
 	addi x18, x0, 1
@@ -19,7 +19,7 @@ main:
 	la a0, Output
 	li a7, 4
 	ecall
-	mv a0, x23 #x23=sum¬O³Ì«áµª®×
+	mv a0, x23 #x23=sumæ˜¯æœ€å¾Œç­”æ¡ˆ
 	li a7, 1
 	ecall
 	li a7, 10
@@ -53,7 +53,7 @@ func3: #return f(x-1)+f(x-2)
 	sw x22, 0(x2)
 	addi x22, x22, -1 #x22--
 	jal x1, recursive
-	lw x22, 0(x2) #¨ú­ì¥»x22ªº­È
+	lw x22, 0(x2) #å–åŸæœ¬x22çš„å€¼
 	addi x2, x2, 4
 	addi x22, x22, -2
 	jal x1, recursive
@@ -71,7 +71,7 @@ func1: #return 2*x + f(x/5)
 	sw x22, 0(x2)
 	slli x22, x22, 1 #2*x
 	add x23, x23, x22 #sum+=2*x
-	lw x22, 0(x2) #¨ú¦^­ì¥»x22ªº­È
+	lw x22, 0(x2) #å–å›åŸæœ¬x22çš„å€¼
 	addi x2, x2, 4
 	div x22, x22, x19 #x/5
 	jal x1, recursive
