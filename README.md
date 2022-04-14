@@ -1,5 +1,5 @@
 # 目錄
-- [題目](http://https://github.com/hlyliang/1093349_proj_1/edit/main/README.md#%E9%A1%8C%E7%9B%AE "題目")
+- [題目](題目)
 
 # 題目
 
